@@ -1,0 +1,6 @@
+How long did you spend working on this project?
+	2 hours.
+What was the most rewarding challenge you conquered?
+	criar o método "create_colors". 
+Where do you still have room to grow?
+	In the methods for Metaprogramming, class_eval, instance_eval, etc

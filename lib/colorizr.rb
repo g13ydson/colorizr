@@ -1,6 +1,6 @@
 class String
   @colors_hash = { red: 31, green: 32, yellow: 33, blue: 34, pink: 35, light_blue: 94, white: 97, light_grey: 37, black: 30 }
-
+  
   def self.create_colors
    	@colors_hash.each do |key, value|
       define_method key do
@@ -14,8 +14,9 @@ class String
   end
 
   def self.sample_colors
-  	@colors_hash.each {|key, value| puts "This is\e[#{value}m #{key}\e[0m" }
+  	@colors_hash.each {|key, value| puts "This is #{key.to_s.send(key)}" }
   end
 
+  String.create_colors
 end
 

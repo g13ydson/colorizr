@@ -19,5 +19,6 @@ puts "Ringo".yellow
 
 install
 -------
-
-* gem install colorizr
+* run: gem build colorizr.gemspec
+* gem install colorizr-0.0.1.gem / or another version
+* require 'colorizr' in your code.
